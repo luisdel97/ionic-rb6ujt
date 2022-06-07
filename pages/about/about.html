@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      TEST
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <input type="file"accept="video/*" #fileInput name="proPics" (change)="onSelectedFile($event)">
+
+  <video
+    style="max-height: 400px; max-width: 400px;"
+    [src]="prev_url"
+    controls></video>
+</ion-content>
